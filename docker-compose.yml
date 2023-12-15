@@ -1,0 +1,9 @@
+version: '21'
+
+services:
+  oracle-xe:
+    image: gvenzl/oracle-xe
+    ports:
+      - "1521:1521"
+    environment:
+      - ORACLE_PASSWORD=esp
