@@ -24,7 +24,7 @@ public class PersonController {
     private final PersonService personService;
 
     @GetMapping("/hello-world")
-    public Mono<String> helloWorldReactive() {
+    public Mono<String> helloWorld() {
         return Mono.just("Hello world!");
     }
 

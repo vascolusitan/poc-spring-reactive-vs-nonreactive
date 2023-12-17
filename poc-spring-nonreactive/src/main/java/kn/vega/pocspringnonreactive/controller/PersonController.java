@@ -18,13 +18,13 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/non-reactive")
+@RequestMapping("/api/non-reactive/db-non-reactive")
 public class PersonController {
 
     private final PersonService personService;
 
     @GetMapping("/hello-world")
-    public String helloWorldReactive() {
+    public String helloWorld() {
         return "Hello world!";
     }
 

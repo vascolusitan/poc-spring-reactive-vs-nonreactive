@@ -1,0 +1,6 @@
+spring:
+  r2dbc:
+    url: r2dbc:oracle://localhost:1521/XEPDB1
+    username: system
+    password: esp
+
