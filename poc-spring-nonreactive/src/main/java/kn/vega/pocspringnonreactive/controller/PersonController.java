@@ -18,7 +18,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/non-reactive/db-non-reactive")
+@RequestMapping("/api")
 public class PersonController {
 
     private final PersonService personService;

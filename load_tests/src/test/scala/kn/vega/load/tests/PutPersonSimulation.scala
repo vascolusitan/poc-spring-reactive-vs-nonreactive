@@ -16,7 +16,7 @@ class PutPersonSimulation extends Simulation {
     .exec(http("Request - PUT /persons")
       .put("/persons")
       .body(StringBody("""{"id": 1, "name": "Teste Alterado", "age": 31}""")).asJson
-      .check(status.is(404))
+      .check(status.is(200))
     )
 
   setUp(getHelloWorld.inject(

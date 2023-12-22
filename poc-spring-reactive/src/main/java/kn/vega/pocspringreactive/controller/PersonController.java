@@ -18,7 +18,7 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/reactive/db-reactive")
+@RequestMapping("/api")
 public class PersonController {
 
     private final PersonService personService;

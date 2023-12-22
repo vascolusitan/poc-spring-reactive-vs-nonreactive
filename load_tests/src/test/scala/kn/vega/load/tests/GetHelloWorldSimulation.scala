@@ -16,7 +16,7 @@ class GetHelloWorldSimulation extends Simulation {
   val httpConf: HttpProtocolBuilder = http.baseUrl(baseUrl)
   val getHelloWorld: ScenarioBuilder = scenario("Greetings")
     .exec(http("Request - GET /hello-world")
-      .get("/reactive/db-reactive/hello-world")
+      .get("/hello-world")
       .check(status.is(200))
     )
 
